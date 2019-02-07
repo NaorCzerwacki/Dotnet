@@ -73,6 +73,5 @@ namespace TheCuttingEdge
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
-        ///jfkdjflhdkghskhdshfkdhskfhskh
     }
 }
