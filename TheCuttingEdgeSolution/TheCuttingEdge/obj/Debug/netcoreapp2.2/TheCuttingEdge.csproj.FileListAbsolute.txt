@@ -127,3 +127,4 @@ C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\
 C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Error.g.cshtml.cs
 C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
+C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Views\Home\Recipes.g.cshtml.cs
