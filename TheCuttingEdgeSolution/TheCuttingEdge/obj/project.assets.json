@@ -6023,7 +6023,7 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "hqlwejhoSclsYOE9rpEmsDktt0Y6CSjmAG3bDBVDopGdsADA70Arz+Aw1e4xk9hT2a0uIvpuymWonTewwfuhJA==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "hasTools": true,
@@ -10094,7 +10094,7 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "ETM/dljiBRObLHbYj/4FzguEw470VW/rOAu2fJlRjNrgN5kwh8iaOVnMfWdUCvDMZkTqhWyVALbEpT3TPjXoyw==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
@@ -12944,23 +12944,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\naor\\.nuget\\packages\\": {},
+    "C:\\Users\\naor's yoga-book\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\naor\\Documents\\GitHub\\Dotnet\\TheCuttingEdgeSolution\\TheCuttingEdge\\TheCuttingEdge.csproj",
+      "projectUniqueName": "C:\\Users\\naor's yoga-book\\Documents\\GitHub\\Dotnet\\TheCuttingEdgeSolution\\TheCuttingEdge\\TheCuttingEdge.csproj",
       "projectName": "TheCuttingEdge",
-      "projectPath": "C:\\Users\\naor\\Documents\\GitHub\\Dotnet\\TheCuttingEdgeSolution\\TheCuttingEdge\\TheCuttingEdge.csproj",
-      "packagesPath": "C:\\Users\\naor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\naor\\Documents\\GitHub\\Dotnet\\TheCuttingEdgeSolution\\TheCuttingEdge\\obj\\",
+      "projectPath": "C:\\Users\\naor's yoga-book\\Documents\\GitHub\\Dotnet\\TheCuttingEdgeSolution\\TheCuttingEdge\\TheCuttingEdge.csproj",
+      "packagesPath": "C:\\Users\\naor's yoga-book\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\naor's yoga-book\\Documents\\GitHub\\Dotnet\\TheCuttingEdgeSolution\\TheCuttingEdge\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\naor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\naor's yoga-book\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

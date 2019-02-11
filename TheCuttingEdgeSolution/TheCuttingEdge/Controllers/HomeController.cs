@@ -25,6 +25,11 @@ namespace TheCuttingEdge.Controllers
             return View();
         }
 
+        public IActionResult RecipePage()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
