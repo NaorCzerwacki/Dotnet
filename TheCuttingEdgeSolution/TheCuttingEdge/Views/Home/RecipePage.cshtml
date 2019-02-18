@@ -8,31 +8,34 @@
         text-decoration: line-through;
     }
 
-    .custom-control-input{
+    .custom-control-input {
         padding: 10px;
+    }
+
+    input{
+        cursor: pointer;
     }
 </style>
 <div class="container">
     <div class="row">
-        <!-- Post Content Column -->
         <div class="col-lg-8">
             <!-- Title -->
             <h1 class="mt-4">&#60;RecipeTitle&#62;</h1>
             <!-- Author -->
             <span class="lead">
                 by <a href="#">&#60;RecipeUploader&#62;(=>&#60;UserName&#62;)</a>
-            </span>
-            <hr>
+            </span><br />
             <!-- Date/Time -->
-            Posted on &#60;RecipeUploadDate&#62;
+            <div style="margin-top: 5px;">Posted on &#60;RecipeUploadDate&#62;</div>
             <hr style="margin-bottom: 30px;">
+        </div>
+    </div>
+    <div class="row">
+        <!-- Post Content Column -->
+        <div class="col-lg-8">            
             <!-- Post Content -->
             <style>
-                h4 {
-                    margin-right: 20px;
-                }
                 p {
-                    color: #9b9b9b;
                     line-height: 2;
                 }
             </style>
@@ -41,23 +44,23 @@
                     <div class="row">
                         <div class="col-12 col-lg-13">
                             <div class="single-preparation-step d-flex">
-                                <h4>01.</h4>                                
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                <input type="checkbox" style="margin: 11px 25px 0 11px; transform: scale(2);" />
+                                <label><p>&#60;Step_#&#62; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></label>
                             </div>
 
                             <div class="single-preparation-step d-flex">
-                                <h4>02.</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                <input type="checkbox" style="margin: 11px 25px 0 11px; transform: scale(2);" />
+                                <label><p>&#60;Step_#&#62; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></label>
                             </div>
 
                             <div class="single-preparation-step d-flex">
-                                <h4>03.</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                <input type="checkbox" style="margin: 11px 25px 0 11px; transform: scale(2);" />
+                                <label><p>&#60;Step_#&#62; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></label>
                             </div>
 
                             <div class="single-preparation-step d-flex">
-                                <h4>04.</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                                <input type="checkbox" style="margin: 11px 25px 0 11px; transform: scale(2);" />
+                                <label><p>&#60;Step_#&#62; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></label>
                             </div>
                         </div>
                     </div>                   
@@ -67,12 +70,53 @@
         </div>
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
+            <!-- ingridiants -->
+            <div class="card my-4" style="border: none; font-size: 16px;
+                        font-weight: 600;">
+                <div class="col-12 col-lg-12">
+                    <div class="ingredients">
+                        <h4>Ingredients</h4>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck1">
+                            <label class="custom-control-label" for="IngredientCheck1">&#60;Ingredient_#&#62; 4 Tbsp (57 gr) butter</label>
+                        </div>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck2">
+                            <label class="custom-control-label" for="IngredientCheck2">&#60;Ingredient_#&#62; 2 large eggs</label>
+                        </div>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck3">
+                            <label class="custom-control-label" for="IngredientCheck3">&#60;Ingredient_#&#62; 2 yogurt containers granulated sugar</label>
+                        </div>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck4">
+                            <label class="custom-control-label" for="IngredientCheck4">&#60;Ingredient_#&#62; 1 vanilla or plain yogurt, 170g container</label>
+                        </div>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck5">
+                            <label class="custom-control-label" for="IngredientCheck5">&#60;Ingredient_#&#62; 2 yogurt containers unbleached white flour</label>
+                        </div>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck6">
+                            <label class="custom-control-label" for="IngredientCheck6">&#60;Ingredient_#&#62; 1.5 yogurt containers milk</label>
+                        </div>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck7">
+                            <label class="custom-control-label" for="IngredientCheck7">&#60;Ingredient_#&#62; 1/4 tsp cinnamon</label>
+                        </div>
+                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
+                            <input type="checkbox" class="custom-control-input" id="IngredientCheck8" style="padding: 10px;">
+                            <label class="custom-control-label" for="IngredientCheck8">&#60;Ingredient_#&#62; 1 cup fresh blueberries</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Categories Widget -->
             <div class="card my-4">
                 <h5 class="card-header">Categories</h5>
                 <div class="card-body" style="padding-bottom: 0px;">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
+                        <input style="cursor: auto;" type="text" class="form-control" placeholder="Search for...">
                         <span class="input-group-btn">
                             <button class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Go!</button>
                         </span>
@@ -105,47 +149,6 @@
                                     <a href="#">&#60;Category&#62;</a>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ingridiants -->
-            <div class="card my-4" style="border: none; font-size: 16px;
-                        font-weight: 600;">
-                <div class="col-12 col-lg-12">
-                    <div class="ingredients">
-                        <h4>Ingredients</h4>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">4 Tbsp (57 gr) butter</label>
-                        </div>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                            <label class="custom-control-label" for="customCheck2">2 large eggs</label>
-                        </div>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                            <label class="custom-control-label" for="customCheck3">2 yogurt containers granulated sugar</label>
-                        </div>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                            <label class="custom-control-label" for="customCheck4">1 vanilla or plain yogurt, 170g container</label>
-                        </div>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                            <label class="custom-control-label" for="customCheck5">2 yogurt containers unbleached white flour</label>
-                        </div>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck6">
-                            <label class="custom-control-label" for="customCheck6">1.5 yogurt containers milk</label>
-                        </div>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck7">
-                            <label class="custom-control-label" for="customCheck7">1/4 tsp cinnamon</label>
-                        </div>
-                        <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
-                            <input type="checkbox" class="custom-control-input" id="customCheck8" style="padding: 10px;">
-                            <label class="custom-control-label" for="customCheck8">1 cup fresh blueberries</label>
                         </div>
                     </div>
                 </div>
@@ -185,3 +188,4 @@
             </div>
         </div>
     </div>
+</div>
