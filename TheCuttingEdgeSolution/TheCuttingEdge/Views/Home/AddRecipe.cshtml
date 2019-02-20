@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Add a Recipe";
+}
+
+<style>
+    input:checked + label {
+        color: #ccc8c8a6;
+        text-decoration: line-through;
+    }
+
+    .custom-control-input {
+        padding: 10px;
+    }
+
+    input {
+        cursor: pointer;
+    }
+
+    .yesInput input {
+        width: 57px;
+        padding-left: 19px;
+    }
+
+    #addStep {
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1 class="mt-4">@ViewData["Title"]</h1>
+            <br />
+            <div class="receipe-content-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-13">
+                            <form method="post">
+                                <div class="form-group">
+                                    <h5>Name of the Recipe</h5>
+                                    <input class="form-control" style="max-width: 340px; cursor:text" placeholder="Enter Name" />
+                                </div>
+                                <div class="form-group">
+                                    <h5>Recipe Description</h5>
+                                    <textarea placeholder="Enter Recipe Description..." style="width: 100%; max-width: 500px; height: 100px;"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <h5 style="margin-bottom: 10px;">Ingredients</h5>
+                                    <div id="IngredientsContainer">
+                                        <div class="input-group" style="margin-bottom: 10px;">
+                                            <input style="cursor: auto; max-width: 340px;" type="text" class="form-control" placeholder="Add an ingredient and its amount">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">+</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <h5 style="margin-bottom: 10px;">Steps</h5>
+                                    <div id="StepsContainer">
+                                        <div id="addStep">
+                                            <div class="input-group" style="margin-bottom: 10px;">
+                                                <span style="line-height: 38px; padding: 0 5px; font-size: 15px;">
+                                                    1)
+                                                </span>
+                                                <input style="cursor: auto; max-width: 340px;" type="text" class="form-control" placeholder="Add a step">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">+</button>
+                                                </span>
+                                            </div>
+                                            <div style="width: 355px;">
+                                                <script>
+
+                                                                                function show1A() {
+                                                        document.getElementById('yesRadio1').style.display = 'none';
+                                                    }
+                                                                                function show1B() {
+                                                        document.getElementById('yesRadio1').style.display = 'block';
+                                                    }
+                                                </script>
+                                                <fieldset>
+                                                    <div style="float: left; padding-top: 3px;">
+                                                        Add Timer?
+                                                        <input type="radio" name="tab1" value="no" onclick="show1A();" checked="checked" />
+                                                        No
+                                                        <input type="radio" name="tab1" value="yes" onclick="show1B();" />
+                                                        Yes
+                                                    </div>
+                                                    <div id="yesRadio1" class="yesInput hide" style="display: none; float: left; margin-left: 5px;">
+                                                        <input type="number" min="0" />:<input type="number" min="0" max="59" />:<input type="number" min="0" max="59" />
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                        <div id="addStep">
+                                            <div class="input-group" style="margin-bottom: 10px;">
+                                                <span style="line-height: 38px; padding: 0 5px; font-size: 15px;">
+                                                    2)
+                                                </span>
+                                                <input style="cursor: auto; max-width: 340px;" type="text" class="form-control" placeholder="Add a step">
+                                                <span class="input-group-btn">
+                                                    <button id="addStepBtn"class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">+</button>
+                                                </span>
+                                            </div>
+                                            <div style="width: 355px;">
+                                                <script>
+
+                                                                                function show2A() {
+                                                        document.getElementById('yesRadio2').style.display = 'none';
+                                                    }
+                                                                                function show2B() {
+                                                        document.getElementById('yesRadio2').style.display = 'block';
+                                                    }
+                                                </script>
+                                                <fieldset>
+                                                    <div style="float: left; padding-top: 3px;">
+                                                        Add Timer?
+                                                        <input type="radio" name="tab2" value="no" onclick="show2A();" checked="checked" />
+                                                        No
+                                                        <input type="radio" name="tab2" value="yes" onclick="show2B();" />
+                                                        Yes
+                                                    </div>
+                                                    <div id="yesRadio2" class="yesInput hide" style="display: none; float: left; margin-left: 5px;">
+                                                        <input type="number" min="0" />:<input type="number" min="0" max="59" />:<input type="number" min="0" max="59" />
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <button type="submit" class="btn btn-primary" style="background-color: #d1ecf1;color: #0c5460; border-color: #0c5460;">Add Recipe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

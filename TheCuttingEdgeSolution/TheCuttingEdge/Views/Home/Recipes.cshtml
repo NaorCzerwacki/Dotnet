@@ -1,7 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Recipes";
 }
-
+<div class="card my-4" style="border:none;">
+    <div class="card-body">
+        <div class="input-group">
+            <input style="cursor: auto;" type="text" class="form-control" placeholder="Search for a recipe">
+            <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Go!</button>
+            </span>
+        </div>
+    </div>
+</div>
 <h2 style="margin-bottom: 12px">@ViewData["Title"]</h2>
 <div class="container">
     <div class="row">
@@ -13,7 +22,7 @@
                     <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
                     <hr />
                     <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Follow To the Recipe &raquo;</a>
+                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on &#60;RecipeUploadDate&#62; by
@@ -25,7 +34,7 @@
                     <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
                     <hr />
                     <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Follow To the Recipe &raquo;</a>
+                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on &#60;RecipeUploadDate&#62; by
@@ -37,7 +46,7 @@
                     <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
                     <hr />
                     <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Follow To the Recipe &raquo;</a>
+                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on &#60;RecipeUploadDate&#62; by
@@ -49,7 +58,7 @@
                     <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
                     <hr />
                     <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Follow To the Recipe &raquo;</a>
+                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on &#60;RecipeUploadDate&#62; by
@@ -60,21 +69,9 @@
         </div>
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4" style="margin-top: 8px;">
-            <!-- Search Widget -->
-            <div class="card my-3">
-                <h5 class="card-header">Search</h5>
-                <div class="card-body">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Go!</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
             <!-- Categories Widget -->
             <div class="card my-3">
-                <h5 class="card-header">Categories</h5>
+                <h5 class="card-header">List of Categories</h5>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-6">
@@ -104,13 +101,6 @@
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-            <!-- Side Widget -->
-            <div class="card my-3">
-                <h5 class="card-header">Side Widget</h5>
-                <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
                 </div>
             </div>
         </div>

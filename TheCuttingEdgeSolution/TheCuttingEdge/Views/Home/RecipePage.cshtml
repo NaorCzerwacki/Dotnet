@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "RecipePage";
+    ViewData["Title"] = "Recipe Page";
 }
 
 <style>
@@ -17,6 +17,16 @@
     }
 </style>
 <div class="container">
+    <div class="card my-4" style="border:none;">
+        <div class="card-body">
+            <div class="input-group">
+                <input style="cursor: auto;" type="text" class="form-control" placeholder="Search for a recipe">
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Go!</button>
+                </span>
+            </div>
+        </div>
+    </div>
     <div class="row">
         <div class="col-lg-8">
             <!-- Title -->
@@ -32,7 +42,7 @@
     </div>
     <div class="row">
         <!-- Post Content Column -->
-        <div class="col-lg-8">            
+        <div class="col-lg-8">
             <!-- Post Content -->
             <style>
                 p {
@@ -63,7 +73,7 @@
                                 <label><p>&#60;Step_#&#62; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p></label>
                             </div>
                         </div>
-                    </div>                   
+                    </div>
                 </div>
             </div>
             <hr>
@@ -107,48 +117,6 @@
                         <div class="custom-control custom-checkbox" style="margin-bottom: 20px;">
                             <input type="checkbox" class="custom-control-input" id="IngredientCheck8" style="padding: 10px;">
                             <label class="custom-control-label" for="IngredientCheck8">&#60;Ingredient_#&#62; 1 cup fresh blueberries</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Categories Widget -->
-            <div class="card my-4">
-                <h5 class="card-header">Categories</h5>
-                <div class="card-body" style="padding-bottom: 0px;">
-                    <div class="input-group">
-                        <input style="cursor: auto;" type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">Go!</button>
-                        </span>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">&#60;Category&#62;</a>
-                                </li>
-                                <li>
-                                    <a href="#">&#60;Category&#62;</a>
-                                </li>
-                                <li>
-                                    <a href="#">&#60;Category&#62;</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">&#60;Category&#62;</a>
-                                </li>
-                                <li>
-                                    <a href="#">&#60;Category&#62;</a>
-                                </li>
-                                <li>
-                                    <a href="#">&#60;Category&#62;</a>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
