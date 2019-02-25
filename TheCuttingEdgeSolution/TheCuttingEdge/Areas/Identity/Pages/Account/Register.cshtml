@@ -26,8 +26,8 @@
                 <label asp-for="Input.ConfirmPassword"></label>
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #d1ecf1;color: #0c5460; border-color: #0c5460;">Register</button>
+            </div>            
+            <button type="submit" id="subBtn" class="btn btn-primary" onclick="this.disabled=true;this.form.submit();" style="background-color: #d1ecf1;color: #0c5460; border-color: #0c5460;">Register</button>
         </form>
     </div>
     <div class="col-md-8" style="margin-top:10px;">
