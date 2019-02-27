@@ -165,3 +165,4 @@ C:\Users\naor's yoga-book\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCutt
 C:\Users\naor's yoga-book\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Views\Home\RecipePage.g.cshtml.cs
 C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Views\Home\RecipePage.g.cshtml.cs
 C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Views\Home\AddRecipe.g.cshtml.cs
+C:\Users\naor\Documents\GitHub\Dotnet\TheCuttingEdgeSolution\TheCuttingEdge\obj\Debug\netcoreapp2.2\Razor\Views\Home\MyRecipes.g.cshtml.cs
