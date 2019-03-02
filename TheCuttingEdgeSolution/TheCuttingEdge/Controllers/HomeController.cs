@@ -35,6 +35,11 @@ namespace TheCuttingEdge.Controllers
             return View();
         }
 
+        public IActionResult EditRecipe()
+        {
+            return View();
+        }
+
         public IActionResult MyRecipes()
         {
             return View();
