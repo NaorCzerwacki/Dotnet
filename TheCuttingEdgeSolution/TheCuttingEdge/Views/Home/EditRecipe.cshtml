@@ -70,10 +70,10 @@
                                             <div style="width: 355px;">
                                                 <script>
 
-                                                                                function show1A() {
+                                                    function show1A() {
                                                         document.getElementById('yesRadio1').style.display = 'none';
                                                     }
-                                                                                function show1B() {
+                                                    function show1B() {
                                                         document.getElementById('yesRadio1').style.display = 'block';
                                                     }
                                                 </script>
@@ -98,16 +98,16 @@
                                                 </span>
                                                 <input style="cursor: auto; max-width: 340px;" type="text" class="form-control" placeholder="Add a step">
                                                 <span class="input-group-btn">
-                                                    <button id="addStepBtn"class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">+</button>
+                                                    <button id="addStepBtn" class="btn btn-secondary" type="button" style="border-radius: 0px 4px 4px 0px; background-color:#d1ecf1; color:#0c5460; border-color: #0c5460;">+</button>
                                                 </span>
                                             </div>
                                             <div style="width: 355px;">
                                                 <script>
 
-                                                                                function show2A() {
+                                                    function show2A() {
                                                         document.getElementById('yesRadio2').style.display = 'none';
                                                     }
-                                                                                function show2B() {
+                                                    function show2B() {
                                                         document.getElementById('yesRadio2').style.display = 'block';
                                                     }
                                                 </script>
@@ -129,6 +129,7 @@
                                 </div>
                                 <br />
                                 <button type="submit" class="btn btn-primary" style="background-color: #d1ecf1;color: #0c5460; border-color: #0c5460;">Add Recipe</button>
+                                <button asp-controller="Home" asp-action="MyRecipes" type="submit" class="btn btn-danger" style="color: white; border-color:black">Cancel</button>
                             </form>
                         </div>
                     </div>

@@ -13,7 +13,7 @@
                     <tr>
                         <th>Title</th>
                         <th>Uploaded Time</th>
-                        <th></th>
+                        <th><a asp-controller="Home" asp-action="AddRecipe" class='btn ' style='border-color:black; cursor:pointer;'>Add</a></th>
                     </tr>
                 </thead>
                 <!--Table head-->
@@ -24,28 +24,9 @@
                         <td>&#60;RecipeUploadDate&#62;</td>
                         <td>
                             <div width="200">
-                                <a class='btn ' style='border-color:black; cursor:pointer;'><i class='fa fa-pencil'></i> Edit</a>
-                                <a class='btn ' style='border-color:black; background-color:red; color:white; cursor:pointer; margin-left:5px;'><i class='fa fa-trash'></i> Delete</a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&#60;RecipeTitle&#62;</td>
-                        <td>&#60;RecipeUploadDate&#62;</td>
-                        <td>
-                            <div width="200">
-                                <a class='btn ' style='border-color:black; cursor:pointer;'><i class='fa fa-pencil'></i> Edit</a>
-                                <a class='btn ' style='border-color:black; background-color:red; color:white; cursor:pointer; margin-left:5px;'><i class='fa fa-trash'></i> Delete</a>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&#60;RecipeTitle&#62;</td>
-                        <td>&#60;RecipeUploadDate&#62;</td>
-                        <td>
-                            <div width="200">
-                                <a class='btn ' style='border-color:black; cursor:pointer;'><i class='fa fa-pencil'></i> Edit</a>
-                                <a class='btn ' style='border-color:black; background-color:red; color:white; cursor:pointer; margin-left:5px;'><i class='fa fa-trash'></i> Delete</a>
+                                <a asp-controller="Home" asp-action="EditRecipe" class='btn ' style='border-color:black; cursor:pointer;'>Edit</a>
+                                <a asp-controller="Home" asp-action="RecipePage" class='btn ' style='border-color:black; cursor:pointer; background-color:#d1ecf1' target="_blank">View Recipe</a>
+                                <a class='btn ' style='border-color:black; background-color:red; color:white; cursor:pointer;'>Delete</a>
                             </div>
                         </td>
                     </tr>

@@ -1,17 +1,17 @@
 ﻿@{
     ViewData["Title"] = "Recipes";
 }
-
 <style>
-    .LettersList{
+
+    .LettersList {
         list-style-type: none;
         margin: 0 auto;
     }
 
-    .LettersList > li{
-        float: left;
-        margin: 0 10px;
-    }
+        .LettersList > li {
+            float: left;
+            margin: 0 10px;
+        }
 </style>
 <div style="position: relative;">
     <img src="~/img/black-and-white-book-data-833109.jpg" style="width: 100%; max-height: 300px;" />
@@ -29,6 +29,7 @@
         </div>
     </div>
     <ul class="LettersList">
+        <li><a href="#">All</a></li>
         <li><a href="#">A</a></li>
         <li><a href="#">B</a></li>
         <li><a href="#">C</a></li>
@@ -59,49 +60,13 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-12">            
+        <div class="col-lg-12">
             <div class="card mb-4">
                 <div class="card-body">
-                    <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
+                    <h2 class="card-title">&#60;RecipeTitle &#62;</h2>
                     <hr />
                     <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
-                </div>
-                <div class="card-footer text-muted">
-                    Posted on &#60;RecipeUploadDate&#62; by
-                    &#60;RecipeUploader&#62;(=>&#60;UserName&#62;)
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
-                    <hr />
-                    <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
-                </div>
-                <div class="card-footer text-muted">
-                    Posted on &#60;RecipeUploadDate&#62; by
-                    &#60;RecipeUploader&#62;(=>&#60;UserName&#62;)
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
-                    <hr />
-                    <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
-                </div>
-                <div class="card-footer text-muted">
-                    Posted on &#60;RecipeUploadDate&#62; by
-                    &#60;RecipeUploader&#62;(=>&#60;UserName&#62;)
-                </div>
-            </div>
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h2 class="card-title">&#60;RecipeTitle&#62;</h2>
-                    <hr />
-                    <p class="card-text">&#60;RecipeDescription&#62;<br />This is where the description of the recipe will show.</p>
-                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;">Follow To the Recipe &raquo;</a>
+                    <a asp-controller="Home" asp-action="RecipePage" class="btn btn-primary" style="background-color:#d1ecf1; color:#0c5460; border-color: #0c5460; float: right;" target="_blank">Follow To the Recipe &raquo;</a>
                 </div>
                 <div class="card-footer text-muted">
                     Posted on &#60;RecipeUploadDate&#62; by

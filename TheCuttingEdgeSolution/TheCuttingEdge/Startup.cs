@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using TheCuttingEdge.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TheCuttingEdge.Models;
 
 namespace TheCuttingEdge
 {
@@ -43,6 +44,9 @@ namespace TheCuttingEdge
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddDbContext<RecipeContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
